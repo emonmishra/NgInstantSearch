@@ -1,0 +1,9 @@
+<div> 
+	<h1>Search Something</h1>
+	<h2>
+		<input (input)="term$.next($event.target.value)">
+		<ul>
+			<li *ngFor="let item of items">{{item}}</li>
+		</ul>
+	</h2>
+</div>
